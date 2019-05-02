@@ -8,17 +8,11 @@ package simplefactory;
 public class PizzaMeet implements Pizza {
 
     @Override
-    public void prepare() {
-        System.out.println("准备肉");
-    }
+    public void prepare() { System.out.println("准备肉"); }
 
     @Override
-    public void make() {
-        System.out.println("开始制作肉披萨");
-    }
+    public void make() { System.out.println("开始制作肉披萨"); }
 
     @Override
-    public void complete() {
-        System.out.println("肉pizza制作成功");
-    }
+    public void complete() { System.out.println("肉pizza制作成功"); }
 }

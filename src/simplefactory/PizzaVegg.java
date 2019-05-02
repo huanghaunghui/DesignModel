@@ -8,17 +8,11 @@ package simplefactory;
 public class PizzaVegg implements Pizza{
 
     @Override
-    public void prepare() {//准备蔬菜
-        System.out.println("准备蔬菜");
-    }
+    public void prepare() { System.out.println("准备蔬菜"); }
 
     @Override
-    public void make() {//开始制作蔬菜披萨
-        System.out.println("开始制作蔬菜披萨");
-    }
+    public void make() { System.out.println("开始制作蔬菜披萨"); }
 
     @Override
-    public void complete() {//蔬菜pizza制作成功
-        System.out.println("蔬菜pizza制作成功");
-    }
+    public void complete() { System.out.println("蔬菜pizza制作成功"); }
 }
