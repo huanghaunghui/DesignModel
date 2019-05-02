@@ -9,5 +9,10 @@ public class test {
     public static void main(String[] args) {
         PizzaStore2 pizzaStore2 = new PizzaStore2();
         pizzaStore2.orderPizza("vegg");
+
+        System.out.println("----------------------");
+
+        PizzaStore pizzaStore = new PizzaStore();
+        pizzaStore.orderPizza("Meet");
     }
 }
