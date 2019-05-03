@@ -13,6 +13,10 @@ public class PizzaStore implements Factory {
         pizza.make();
         pizza.complate();
     }
+    void orderColdPizza(String type){
+        Pizza pizza = this.create(type);
+        pizza.prepared();
+    }
 
     @Override
     public Pizza create(String type) {
@@ -22,8 +26,25 @@ public class PizzaStore implements Factory {
         return null;
     }
 
+    @Override
+    public Milk createMike(String type) {
+        if (type.equals("m")){
+            return new HotMile();
+        }
+        return null;
+    }
+
+    @Override
+    public Pizza createdColdPizza(String type) {
+        if (type.equals("v")) {
+            return new VeggPizza();
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         PizzaStore pizzaStore = new PizzaStore();
         pizzaStore.orderPizza("v");
+        pizzaStore.orderColdPizza("v");
     }
 }
