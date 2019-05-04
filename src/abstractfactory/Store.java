@@ -21,5 +21,6 @@ public class Store{
 
     public static void main(String[] args) {
         consume("Pizza","vegg","cooked");
+        System.out.println(Runtime.getRuntime());
     }
 }
