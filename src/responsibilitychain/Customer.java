@@ -8,7 +8,9 @@ import java.util.Random;
 /**
  * @author hhh
  * @date 2020/3/3 9:56
- * @description
+ * @description 责任链模式
+ *  顾客申请折扣，触发priceHandler对请求价格的处理，在处理价格之前通过工厂方法创建了一个priceHandler的实例，
+ *  如果实例处理不了折扣，触发后继，然后调用工厂设置后继并创建新的PriceHandler来处理折扣，还是处理不了继续申请，直到成功。
  */
 public class Customer {
     private PricesHandler pricesHandler;
