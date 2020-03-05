@@ -9,7 +9,7 @@ import java.util.Map;
  * @description
  */
 public class Catch {
-    public static final Map<String,Class> map = new HashMap();
+    private static final Map<String,Class> map = new HashMap();
 
     static {
         map.put("CUSTOMERNAME",CustomerCatch.class);
